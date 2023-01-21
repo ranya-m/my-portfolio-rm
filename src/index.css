@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family:"League-Spartan", sans-serif;
+    src: url(./fonts/static/LeagueSpartan-Regular.ttf);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .section {
+    @apply container mx-auto py-[6rem] min-h-screen px-6
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f5f3ff;
+  overflow-x: hidden;
+}
+
+
+/***********  HOVER ON CODING LANGUAGES ICONS (HOMEPAGE) ********** */
+#icon1:hover {
+  background-color: #F4470B;
+}
+#icon2:hover {
+  background-color: #0091D5;
+}
+#icon3:hover {
+  background-color: rgba(255, 255, 0, 0.829);
+}
+#icon4:hover {
+  background-color: #48CEF7;
+}
+#icon5:hover {
+  background-color: #F72C1F;
+}
+#icon6:hover {
+  background-color: violet;
+}
+
+
+/* ********* ANIMATION DOT DOT DOT (CHATBOX HOMEPAGE) ********** */
+.dot-flashing {
+  position: absolute;
+  bottom: -15%;
+  left: 10%;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #7260be;
+  color: #8773de;
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.6s;
+  
+}
+.dot-flashing::before, .dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #6959b4;
+  color: #816cdd;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+.dot-flashing::after {
+  left: 15px;
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #e6f63bef;
+  }
+  50%, 100% {
+    background-color: rgba(207, 254, 97, 0.425);
+  }
+}
+
