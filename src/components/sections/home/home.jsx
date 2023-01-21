@@ -19,18 +19,18 @@ return (
       <div className="md:w-[55%] mx-auto md:mx-0">
 
         <div className="flex gap-x-2 ml-2 sm:ml-0 sm:gap-x-6 items-center justify-center">
-            <div className="w-[90px] sm:w-[140px] rounded-full overflow-hidden shadow-md shadow-yellow md:ml-2">
+            <div className="w-[90px] sm:w-[140px] rounded-full overflow-hidden shadow-md shadow-yellow md:ml-8 lg:ml-0">
               <img src={profile} alt="Profile image" className="w-full h-full object-cover"/>
             </div>
 
-            <div className="relative flex flex-col gap-2 mr-3 sm:mr-0 mb-6 md:mb-0">
-              <div className="bg-mylightOpaque rounded-lg py-1 px-3 flex w-fit"> 
-              <MdOutlineWavingHand className="text-xl text-yellow text-opacity-70 mr-1"/> 
+            <div className="relative flex flex-col gap-2 mr-3 sm:mr-0 mb-6 md:mb-0 text-mydark">
+              <div className="bg-mylightOpaque rounded-lg py-1 px-3 flex w-fit font-semibold"> 
+              <MdOutlineWavingHand className="text-xl text-yellow text-opacity-80 mr-2"/> 
               Hello, I'm Ranya</div>
 
-              <div className="bg-mylightOpaque rounded-lg py-1 px-3 flex w-fit max-w-[260px]">A FullStack Developer who loves to build aesthetic and functional Websites & Apps</div>
+              <div className="bg-mylightOpaque rounded-lg py-1 px-3 flex w-fit max-w-[260px] font-semibold ">A FullStack Developer who loves to build aesthetic and functional Websites & Apps</div>
 
-              <div className="bg-mylightOpaque rounded-lg px-3 flex w-fit">Find out more below !</div>
+              <div className="bg-mylightOpaque rounded-lg px-3 flex w-fit font-semibold">Find out more below !</div>
               <div className="dot-flashing bg-white"></div>   
 
             </div>        

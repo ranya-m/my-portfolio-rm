@@ -35,7 +35,7 @@ export default function Projects() {
             {projectCategory.map((btn) => {
                 return(
                     <button key={btn.id} value={btn.value} onClick={handleClick}
-                    className='py-1 w-[80px] text-sm text-mydark rounded-2xl bg-mylight hover:bg-spaceBlue
+                    className='py-1 w-[80px] font-medium text-sm text-mydark rounded-2xl bg-mylight bg-opacity-90 hover:bg-spaceBlue
                     hover:text-mylight
                      hover:shadow-lg hover:shadow-mylightOpaque
                      focus:bg-spaceBlue

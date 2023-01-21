@@ -14,13 +14,13 @@ export default function Navbar() {
         <div className='flex items-center text-mydark justify-between py-4 pr-4 pl-1 sm:pr-8 bg-gradient-to-r from-spacePurple to-spaceBlue font-medium lg:pr-10'>
             <div className='flex items-center gap-2 text-light'>
                 <div className='w-8 h-8'><img src={logo} alt="R. "/></div>
-                <p className='text-m text-yellow text-opacity-80'>Portfolio</p>
+                <p className='text-m text-mylight text-opacity-90'>Portfolio</p>
             </div>
             <div className='hidden md:flex items-center space-x-6 text-m text-opacity-90 font-medium '>
                 {navLinks.map(link => {
                     return(
                         <div key={link.id}>  
-                            <a  className=' text-opacity-90 text-mylight font-medium hover:bg-mylightOpaque py-1 px-2 rounded-lg ' href={link.href}>{link.text}</a>
+                            <a  className=' text-opacity-90 text-mylight font-medium hover:bg-mylightOpaque py-2 px-4 rounded-lg ' href={link.href}>{link.text}</a>
                         </div>
                     )
                 }
