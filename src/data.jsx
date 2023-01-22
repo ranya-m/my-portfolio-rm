@@ -94,7 +94,7 @@ export const navLinks = [
       id: 6,
       icon: <HiMagnifyingGlassCircle/>,
       title: "Want to know more?",
-      text: "Thank you for reading me up until now ! click here to check out my resume for more informations. To look at some snippets of my coding projects, scroll down below.",
+      text: "Thank you for reading me up until now ! Click here to check out my resume for more informations. To look at some snippets of my coding projects, scroll down below.",
       href: "https://ranya-m.github.io/CV-RANYA-M-master/",
     },
   ];

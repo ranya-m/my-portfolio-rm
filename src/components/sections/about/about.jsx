@@ -1,6 +1,5 @@
 import React from 'react'
 import {generalSkills} from '../../../data';
-import wave2 from "../../../assets/img/wave-haikei.png";
 
 
 export default function About() {
@@ -21,10 +20,13 @@ export default function About() {
             key={skill.id}
             className={`${skill.title} flex gap-4 p-4 hover:bg-spacePurple hover:bg-opacity-20 rounded-lg`}
           >
-            <div className="text-spacePurple text-[2rem]">{skill.icon}</div>
+            <div className="text-spacePurple text-[2rem] hidden sm:block">{skill.icon}</div>
             <div>
-              <h3 className="text-xl">{skill.title}</h3>
-              <p className="opacity-80 mt-4 text-[0.9rem]">
+                <div className='flex items-center'>
+                  <div className="text-spacePurple text-[2rem] block pr-2 sm:hidden">{skill.icon}</div>
+                  <h3 className="text-xl">{skill.title}</h3>
+                  </div>
+              <p className="opacity-80 mt-4 text-[0.9rem] text-justify">
                 {skill.text}
               </p>
             </div>
