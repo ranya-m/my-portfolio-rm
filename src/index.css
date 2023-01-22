@@ -33,7 +33,7 @@ body {
   background-color: #F4470B;
 }
 #icon2:hover {
-  background-color: #0091D5;
+  background-color: #254BDD;
 }
 #icon3:hover {
   background-color: rgba(255, 255, 0, 0.829);
@@ -98,3 +98,11 @@ body {
   }
 }
 
+/* project images effects */
+.projectImg {
+  filter:grayscale(90%);
+}
+
+.projectImg:hover {
+  filter:saturate(100%);
+}

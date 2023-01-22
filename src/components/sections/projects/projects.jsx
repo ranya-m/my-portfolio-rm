@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import { projectCategory } from '../../../data';
 import { projects } from '../../../data';
 import {motion, AnimatePresence} from 'framer-motion';
@@ -22,8 +22,13 @@ export default function Projects() {
     };
     console.log(filterImages);
 
+    const show = useRef()
+    const showImage = (e) => {
+        show.current.classList.add("expand");
+    }
+
   return (
-    <section className='bg-mydark relative'>
+    <section className='bg-mydark relative min-h-[165vh] max-h-fit'>
     <div id='projects' className='section pt-[5rem] pb-[9rem]'>
         <div className='mb-8'>
             <h2 className='text-[1.5rem] font-bold text-mylight'>
@@ -48,7 +53,7 @@ export default function Projects() {
         </div>
         
     <AnimatePresence>
-        <motion.div className='grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-3 p-2 lg:mx-20'>
+        <motion.div className='grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-3 p-2 lg:mx-20 mb-8'>
             {filterImages && filterImages.map(filterImage=>{
                 return(
                     <motion.div
@@ -58,14 +63,21 @@ export default function Projects() {
                     exit={{ opacity: 0, transition: { duration: 0.3 } }}
                     key={filterImage.id}
                     >
-                        <motion.img src={filterImage.image} alt="" className=''/>
+                        <motion.img ref={show} onClick={showImage} src={filterImage.image} alt="" className='projectImg h-full object-cover drop-shadow-md shadow-mydark'/>
                     </motion.div>
                 )
             }
             )}
         </motion.div>
     </AnimatePresence>
+
+    <div className='flex justify-center'>
+    <a href='https://github.com/ranya-m?tab=repositories' target='_blank' className="text-[0.9rem] font-medium shadow-lg hover:bg-yellow rounded-full py-2 px-6 hover:text-mydark bg-mylight bg-opacity-95 text-mydark cursor-pointer ">See more projects</a>
     </div>
+    
+    </div>
+   
+
 
       {/* wave deco */}
    <img src={waveLight} className=" w-[120%] absolute bottom-[0vh] h-[25vh] sm:h-[25vh]"/>

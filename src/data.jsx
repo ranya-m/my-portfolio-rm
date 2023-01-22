@@ -1,6 +1,3 @@
-// general pictures imports
-import profile from "./assets/img/profile-square.jpg";
-
 // general skills icons imports
 import {TbCode} from 'react-icons/tb';
 import {MdOutlineScience} from 'react-icons/md';
@@ -18,15 +15,15 @@ import {IoLogoLaravel} from 'react-icons/io5';
 import {HiMagnifyingGlassCircle} from 'react-icons/hi2';
 
 // projects screenshots imports
-import pro1 from './assets/img/dummy.jpg';
-import pro2 from './assets/img/dummy.jpg';
-import pro3 from './assets/img/dummy.jpg';
-import pro4 from './assets/img/dummy.jpg';
-import pro5 from './assets/img/dummy.jpg';
-import pro6 from './assets/img/dummy.jpg';
-import pro7 from './assets/img/dummy.jpg';
-import pro8 from './assets/img/dummy.jpg';
-import pro9 from './assets/img/dummy.jpg';
+import pro1 from './assets/img/pro9.png';
+import pro2 from './assets/img/pro2.png';
+import pro3 from './assets/img/pro6.png';
+import pro4 from './assets/img/pro8.png';
+import pro5 from './assets/img/pro3.png';
+import pro6 from './assets/img/pro5.png';
+import pro7 from './assets/img/pro1.png';
+import pro8 from './assets/img/pro7.png';
+import pro9 from './assets/img/pro4.png';
 
 // contact icons
 import {HiOutlineLocationMarker} from 'react-icons/hi';
@@ -73,7 +70,7 @@ export const navLinks = [
       id: 2,
       icon: <MdOutlineScience/>,
       title: "Biology Science",
-      text: "My college studies in Biology and Health Sciences allowed me to develop a critical thinking mindset. It also introduced me to the fields of Scientific Data Management and Bio-Informatics, particularly Python, which cultivated my interest for programming further more.",
+      text: "My college studies in Biology and Health Sciences allowed me to develop a critical thinking mindset. It also introduced me to the fields of Scientific Data Management and Bio-Informatics, particularly the usage of Python, which cultivated my interest for programming further more.",
     },
     {
       id: 3,
@@ -165,7 +162,7 @@ export const navLinks = [
     {
       id: 3,
       image: pro3,
-      value: "React",
+      value: "Javascript",
     },
     {
       id: 4,
@@ -185,7 +182,7 @@ export const navLinks = [
     {
       id: 7,
       image: pro7,
-      value: "Html-Css",
+      value: "React",
     },
     {
         id: 8,
