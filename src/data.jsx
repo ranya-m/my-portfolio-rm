@@ -195,7 +195,7 @@ export const navLinks = [
       value: "Javascript",
       title: "Like/Dislike App",
       description:"App made with React, inspired by social media like/dislike system",
-      link:"",
+      link:"https://ranya-m.github.io/likedislike/",
     },
     {
       id: 7,
